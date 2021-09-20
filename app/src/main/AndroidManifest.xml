@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelWorld">
         <activity
-            android:name=".IntroActivity"
+            android:name=".auth.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".intro.view.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
