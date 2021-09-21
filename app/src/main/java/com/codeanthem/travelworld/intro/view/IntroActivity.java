@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.codeanthem.travelworld.R;
-import com.codeanthem.travelworld.auth.LoginActivity;
+import com.codeanthem.travelworld.auth.view.LoginActivity;
 import com.codeanthem.travelworld.intro.viewmodel.IntroViewModel;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
@@ -72,6 +72,14 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
                 finish();
             }
         });
+
+        vpIntro.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                viewModel.setCurrentIntro(position);
+            }
+        });
+
     }
 
     @Override

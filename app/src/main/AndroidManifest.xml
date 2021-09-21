@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelWorld">
         <activity
-            android:name=".auth.LoginActivity"
+            android:name=".home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.view.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.view.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.view.LoginActivity"
             android:exported="true" />
         <activity
             android:name=".intro.view.IntroActivity"
