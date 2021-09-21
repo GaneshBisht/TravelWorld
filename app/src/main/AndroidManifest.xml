@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelWorld">
         <activity
-            android:name=".home.HomeActivity"
+            android:name=".home.view.HomeActivity"
             android:exported="true" />
         <activity
             android:name=".auth.view.ForgotPasswordActivity"

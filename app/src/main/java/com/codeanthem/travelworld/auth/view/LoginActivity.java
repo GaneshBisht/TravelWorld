@@ -13,7 +13,7 @@ import com.codeanthem.travelworld.R;
 import com.codeanthem.travelworld.auth.model.AuthModel;
 import com.codeanthem.travelworld.auth.model.AuthRepository;
 import com.codeanthem.travelworld.auth.viewmodel.AuthViewModel;
-import com.codeanthem.travelworld.home.HomeActivity;
+import com.codeanthem.travelworld.home.view.HomeActivity;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;

@@ -11,6 +11,7 @@ import android.view.View;
 
 import com.codeanthem.travelworld.R;
 import com.codeanthem.travelworld.auth.view.LoginActivity;
+import com.codeanthem.travelworld.home.view.HomeActivity;
 import com.codeanthem.travelworld.intro.viewmodel.IntroViewModel;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
@@ -55,6 +56,18 @@ public class IntroActivity extends AppCompatActivity implements View.OnClickList
 
         // CircleIndicator config
         circleIndicator3.setViewPager(vpIntro);
+
+        // chech for login
+        if(viewModel.isLogin()){
+            Intent iHome = new Intent(this, HomeActivity.class);
+            startActivity(iHome);
+            finish();
+        }
+        else if(viewModel.isIntroSeen()){
+            Intent iHome = new Intent(this, LoginActivity.class);
+            startActivity(iHome);
+            finish();
+        }
 
 
 

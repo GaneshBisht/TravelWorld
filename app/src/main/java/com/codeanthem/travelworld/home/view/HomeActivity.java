@@ -1,4 +1,4 @@
-package com.codeanthem.travelworld.home;
+package com.codeanthem.travelworld.home.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 

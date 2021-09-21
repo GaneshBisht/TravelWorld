@@ -77,6 +77,15 @@ public class IntroViewModel extends AndroidViewModel {
 
     }
 
+    public boolean isLogin(){
+       return sp.getBoolean("isLogin", false);
+
+    }
+
+    public boolean isIntroSeen(){
+        return  sp.getBoolean("isSeen", false);
+    }
+
 
 
 }
